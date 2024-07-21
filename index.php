@@ -11,25 +11,25 @@ if (!isset($_SESSION['username'])) {
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Peminjaman Proyektor</title>
+    <title>Beranda - Peminjaman Proyektor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         .navbar {
-            background-color: #343a40; /* Warna gelap untuk tema profesional */
+            background-color: #003366; /* Biru tua untuk navbar */
         }
         .nav-link {
             transition: background-color 0.3s;
         }
         #satu {
-            background-color: #343a40; /* Sesuaikan dengan navbar */
+            background-color: #003366; /* Sesuaikan dengan navbar */
             border-radius: 10px;
         }
         .nav-item#satu.active .nav-link {
-            background-color: #343a40; /* Warna latar belakang beranda */
+            background-color: #003366; /* Warna latar belakang beranda */
         }
         .nav-link:hover {
-            background-color: #e0d5ce; /* Warna highlight saat hover */
+            background-color: #CCCCCC; /* Abu-abu terang untuk highlight saat hover */
         }
         .content-card {
             margin-top: 20px;
@@ -45,9 +45,9 @@ if (!isset($_SESSION['username'])) {
             padding: 1.5rem;
         }
         .footer {
-            background-color: #343a40; /* Warna gelap untuk footer */
+            background-color: #003366; /* Biru tua untuk footer */
             padding: 10px;
-            color: #fff; /* Warna teks putih untuk kontras */
+            color: #FFFFFF; /* Warna teks putih untuk kontras */
         }
     </style>
 </head>
@@ -65,7 +65,7 @@ if (!isset($_SESSION['username'])) {
                         <ul class="dropdown-menu dropdown-menu-end mt-2">
                             <li><a class="dropdown-item" href="#"><i class="bi bi-person-bounding-box"></i> Profil</a></li>
                             <li><a class="dropdown-item" href="#"><i class="bi bi-sliders2-vertical"></i> Pengaturan</a></li>
-                            <li><a class="dropdown-item" href="logout.php"><i class="bi bi-box-arrow-left"></i> logout</a></li>
+                            <li><a class="dropdown-item" href="logout.php"><i class="bi bi-box-arrow-left"></i> Logout</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -91,19 +91,19 @@ if (!isset($_SESSION['username'])) {
                             <div class="offcanvas-body">
                                 <ul class="navbar-nav nav-pills flex-column justify-content-end flex-grow-1">
                                     <li class="nav-item" id="satu">
-                                        <a class="nav-link link-light active" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i> Beranda </a>
+                                        <a class="nav-link link-light active" aria-current="page" href="index.php"><i class="bi bi-house-door-fill"></i> Beranda </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link link-dark" href="#"><i class="bi bi-person-fill"></i> Manajemen Pengguna </a>
+                                        <a class="nav-link link-dark" href="manajemen_pengguna.php"><i class="bi bi-person-fill"></i> Manajemen Pengguna </a>
                                     </li> 
                                     <li class="nav-item">
-                                        <a class="nav-link link-dark" href="#"><i class="bi bi-credit-card-fill"></i> Manajemen Proyektor </a>
+                                        <a class="nav-link link-dark" href="manajemen_proyektor.php"><i class="bi bi-credit-card-fill"></i> Manajemen Proyektor </a>
                                     </li>    
                                     <li class="nav-item">
-                                        <a class="nav-link link-dark" href="#"><i class="bi bi-person-lines-fill"></i> Proses Peminjaman dan Pengembalian </a>
+                                        <a class="nav-link link-dark" href="proses_peminjaman.php"><i class="bi bi-person-lines-fill"></i> Proses Peminjaman dan Pengembalian </a>
                                     </li>    
                                     <li class="nav-item">
-                                        <a class="nav-link link-dark" href="#"><i class="bi bi-bar-chart-fill"></i> Monitoring dan Laporan </a>
+                                        <a class="nav-link link-dark" href="monitoring_laporan.php"><i class="bi bi-bar-chart-fill"></i> Monitoring dan Laporan </a>
                                     </li>       
                                 </ul>
                             </div>
